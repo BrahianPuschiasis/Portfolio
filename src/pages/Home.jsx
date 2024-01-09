@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import "../styles/Home.css";
 import React from "react";
@@ -115,36 +116,15 @@ const Home = () => {
 
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">
-            Experiencia y Proyectos
-          </h2>
+          <h2 className="text-xl font-semibold mb-2">Idiomas</h2>
           <ul className="list-disc pl-6">
+            <li>Español: Nativo</li>
+            <li>Italiano: Básico (hablado y escrito, necesita repaso)</li>{" "}
+            <li>Portugués: Intermedio (hablado y escrito)</li>{" "}
             <li>
-              Proyecto Integrador para Digital House, en el cual integramos
-              back/front con AWS, usando Java/JavaScript/React/MySQL/CSS/HTML.
+              Inglés: Avanzado (hablado, escrito y comprensión; práctica
+              necesaria para formalidad)
             </li>
-            <p>Descripción del proyecto...</p>
-            <p>Links a ambos repositorios:</p>
-            <ul className="list-disc pl-6">
-              <li>
-                <a
-                  href="https://github.com/carliitosalvarez/FourSenses-Proyect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Repositorio Front
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/Mondati/Proyecto-integrador"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Repositorio Back
-                </a>
-              </li>
-            </ul>
           </ul>
           {/* Agrega más experiencias y proyectos según sea necesario */}
         </div>
@@ -224,6 +204,7 @@ const Home = () => {
               <h3 className="text-lg font-semibold">Desarrollo Back-End</h3>
               <ul className="list-disc pl-6">
                 <li>Spring Boot</li>
+                <li>Hibernate</li>
                 {/* Agrega más tecnologías Back-End según sea necesario */}
               </ul>
             </div>
