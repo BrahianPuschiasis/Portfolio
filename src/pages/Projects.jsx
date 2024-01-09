@@ -26,12 +26,51 @@ const Projects = () => {
                 url: "https://github.com/Mondati/Proyecto-integrador",
               },
               {
-                name: "Merge",
+                name: "Juntos",
                 url: "https://github.com/BrahianPuschiasis/FourSenses",
               },
             ]}
           />
         </div>
+
+        <div className="mb-8">
+          {" "}
+          {/* Add margin bottom to create separation */}
+          <ProjectCard
+            title="Proyecto final Front End III (Digital House)"
+            description="Se explica toda la consigna en el 'README.md' del repositorio, pero en resumen es un proyecto full react + vite, es una SPA, que permite el cambio a modo oscuro/brillante, agregar y quitar odontologos de favorito, tiene validaciones en el contacto, y utiliza una api para renderizas la informacion de los mismos."
+            repositories={[
+              {
+                name: "Frontend",
+                url: "https://github.com/BrahianPuschiasis/FinalFrontIII",
+              },
+              {
+                name: "Pagina Desplegada",
+                url: "https://brahianpuschiasis.github.io/FinalFrontIII/",
+              },
+            ]}
+          />
+        </div>
+
+        <div className="mb-8">
+          {" "}
+          {/* Add margin bottom to create separation */}
+          <ProjectCard
+            title="Proyecto final Front End I (Digital House)"
+            description="Se explica toda la consigna en el 'README.md' del repositorio, pero en resumen es un proyecto hecho 100% en HTML con CSS, se busca replicar exactamente una pagina en base al modelo recibido en figma."
+            repositories={[
+              {
+                name: "Frontend",
+                url: "https://github.com/BrahianPuschiasis/FinalFront",
+              },
+              {
+                name: "Pagina Desplegada",
+                url: "https://brahianpuschiasis.github.io/FinalFront/",
+              },
+            ]}
+          />
+        </div>
+       
 
         <div className="mb-8">
           {" "}
@@ -55,6 +94,8 @@ const Projects = () => {
             ]}
           />
         </div>
+        
+
 
         <div className="mb-8">
           {" "}

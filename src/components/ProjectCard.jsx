@@ -13,8 +13,13 @@ const ProjectCard = ({ title, description, repositories, videos }) => (
         <p className="font-semibold">Repositorios:</p>
         <ul className="list-disc pl-6">
           {repositories.map((repo, index) => (
-            <li key={index}>
-              <a href={repo.url} target="_blank" rel="noopener noreferrer">
+            <li key={index} className="group">
+              <a
+                href={repo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400"
+              >
                 {repo.name}
               </a>
             </li>
