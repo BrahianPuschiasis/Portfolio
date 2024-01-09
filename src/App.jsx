@@ -7,7 +7,7 @@ import Projects from './pages/Projects.jsx';
 function App() {
   return (
     <Routes>
-    <Route path='/' element={<Home />} />
+    <Route path='/curriculum' element={<Home />} />
     <Route path='/projects' element={<Projects />} />
 
   </Routes>

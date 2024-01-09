@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="text-white">
-            <Link to="/" className="text-xl font-semibold hover:text-blue-400 hover:shadow-md transition duration-300 ease-in-out">Home</Link>
+            <Link to="/curriculum" className="text-xl font-semibold hover:text-blue-400 hover:shadow-md transition duration-300 ease-in-out">Home</Link>
           </div>
           <div className="text-white">
             <Link to="/projects" className="text-xl font-semibold ml-4 hover:text-blue-400 hover:shadow-md transition duration-300 ease-in-out">Projects</Link>

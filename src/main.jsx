@@ -9,6 +9,7 @@ import Header from './components/Header.jsx'
 import Navbar from './components/NavBar.jsx'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import Home from './pages/Home.jsx'
 
 library.add(fab);
 
