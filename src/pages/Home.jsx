@@ -1,28 +1,36 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import "../styles/Home.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useLanguage } from '../context/LanguajeContext.jsx'
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation();
+
+  useEffect(() => {
+  }, [language]);
+
   return (
     <div className="font-sans bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white">
       <section className="container mx-auto my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-            <h2 className="text-xl font-semibold mb-2">Información Personal</h2>
+            <h2 className="text-xl font-semibold mb-2">{t('personalInfo')}</h2>
             <p>
-              <strong>Nombre:</strong> Brahian Puschiasis
+              <strong>{t('name')}:</strong> Brahian Puschiasis
             </p>
             <p>
-              <strong>Correo Electrónico:</strong> brahian.puschiasis@gmail.com
+              <strong>{t('email')}:</strong> brahian.puschiasis@gmail.com
             </p>
             <p>
-              <strong>Teléfono:</strong> +598 95591793
+              <strong>{t('phone')}:</strong> +598 95591793
             </p>
             <p>
-              <strong>LinkedIn:</strong>{" "}
+              <strong>{t('linkedIn')}:</strong>{" "}
               <a
                 href="https://www.linkedin.com/in/brahian-puschiasis-948972234/"
                 target="_blank"
@@ -35,7 +43,7 @@ const Home = () => {
               </a>
             </p>
             <p>
-              <strong>GitHub:</strong>{" "}
+              <strong>{t('github')}:</strong>{" "}
               <a
                 href="https://github.com/BrahianPuschiasis"
                 target="_blank"
@@ -50,26 +58,18 @@ const Home = () => {
           </div>
 
           <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-            <h2 className="text-xl font-semibold mb-2">Experiencia Laboral</h2>
+            <h2 className="text-xl font-semibold mb-2">{t('workExperience')}</h2>
             <div>
               <p className="text-lg font-semibold">
-                Desarrollador Full Stack - Sin experiencia laboral de momento
+                {t('developerExperience')}
               </p>
-
-              {/* <p className="text-sm">No tengo experiencia de momento</p>
-              <p className="text-sm">Cuento con las siguientes habilidades</p> */}
               <div className="mb-4"> </div>
               <ul className="list-disc pl-6">
-                <li>Desarrollo y mantenimiento de aplicaciones web.</li>
-                <li>
-                  Colaboración en equipos ágiles utilizando metodologías Scrum.
-                </li>
-                <li>
-                  Implementación de nuevas características y resolución de
-                  problemas.
-                </li>
-                <li>Creacion y mantenimiento de bases de datos</li>
-                <li>Pruebas unitarias</li>
+                <li>{t('webDevelopment')}</li>
+                <li>{t('agileCollaboration')}</li>
+                <li>{t('featureImplementation')}</li>
+                <li>{t('databaseMaintenance')}</li>
+                <li>{t('unitTesting')}</li>
               </ul>
             </div>
             {/* Agrega más experiencias laborales según sea necesario */}
@@ -79,36 +79,28 @@ const Home = () => {
 
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">Educación</h2>
+          <h2 className="text-xl font-semibold mb-2">{t('education')}</h2>
           <div className="mb-4">
-            {" "}
-            {/* Agrega un margen inferior aquí */}
-            <p className="text-lg font-semibold">Bachiller Tecnológico</p>
+            <p className="text-lg font-semibold">{t('highSchool')}</p>
             <p className="text-sm">
               Instituto Tecnológico Superior "Arias Balparda"
             </p>
             <p className="text-sm">2011 - 2014</p>
           </div>
           <div className="mb-4">
-            {" "}
-            {/* Agrega un margen inferior aquí */}
-            <p className="text-lg font-semibold">Professional Developer</p>
+            <p className="text-lg font-semibold">{t('professionalDeveloper')}</p>
             <p className="text-sm">Digital House/UTEC</p>
             <p className="text-sm">2022 - 2023</p>
           </div>
           <div className="mb-4">
-            {" "}
-            {/* Agrega un margen inferior aquí */}
-            <p className="text-lg font-semibold">Back End Specialist</p>
+            <p className="text-lg font-semibold">{t('backendSpecialist')}</p>
             <p className="text-sm">Digital House/UTEC</p>
-            <p className="text-sm">2024 - En curso</p>
+            <p className="text-sm">2024 - {t('onCourse')}</p>
           </div>
           <div>
-            {" "}
-            {/* No necesitas un margen inferior en el último elemento */}
-            <p className="text-lg font-semibold">Ingeniero en Computación</p>
+            <p className="text-lg font-semibold">{t('computerEngineer')}</p>
             <p className="text-sm">Facultad de Ingeniería (UDELAR)</p>
-            <p className="text-sm">2020 - En curso</p>
+            <p className="text-sm">2020 - {t('onCourse')}</p>
           </div>
           {/* Agrega más información educativa según sea necesario */}
         </div>
@@ -116,15 +108,12 @@ const Home = () => {
 
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">Idiomas</h2>
+          <h2 className="text-xl font-semibold mb-2">{t('languages')}</h2>
           <ul className="list-disc pl-6">
-            <li>Español: Nativo</li>
-            <li>Italiano: Básico (hablado y escrito, necesita repaso)</li>{" "}
-            <li>Portugués: Intermedio (hablado y escrito)</li>{" "}
-            <li>
-              Inglés: Avanzado (hablado, escrito y comprensión; práctica
-              necesaria para formalidad)
-            </li>
+            <li>{t('spanish')}: {t('native')}</li>
+            <li>{t('italian')}: {t('basic')} ({t('spokenAndWritten')}, {t('needsReview')})</li>
+            <li>{t('portuguese')}: {t('intermediate')} ({t('spokenAndWritten')})</li>
+            <li>{t('english')}: {t('advanced')} ({t('spokenWrittenUnderstanding')}, {t('practiceRequiredForFormality')})</li>
           </ul>
           {/* Agrega más experiencias y proyectos según sea necesario */}
         </div>
@@ -132,37 +121,27 @@ const Home = () => {
 
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">Certificaciones</h2>
+          <h2 className="text-xl font-semibold mb-2">{t('certifications')}</h2>
           <ul className="list-disc pl-6 space-y-4">
-            {" "}
-            {/* space-y-4 agrega espacio entre elementos de la lista */}
             <li className="mb-4">
-              {" "}
-              {/* mb-4 agrega margen inferior a cada elemento de la lista */}
-              Nombre de la Certificación: Diploma de Italiano Básico
+              {t('certificationNameItalian')}: {t('italianBasicDiploma')}
               <br />
-              Fecha de Obtención: 2011
+              {t('fechaObtencion')}: 2011
             </li>
             <li className="mb-4">
-              {" "}
-              {/* mb-4 agrega margen inferior a cada elemento de la lista */}
-              Nombre de la Certificación: Diploma de Portugués Básico
+              {t('certificationNamePortuguese')}: {t('portugueseBasicDiploma')}
               <br />
-              Fecha de Obtención: 2011
+              {t('fechaObtencion')}: 2011
             </li>
             <li className="mb-4">
-              {" "}
-              {/* mb-4 agrega margen inferior a cada elemento de la lista */}
-              Nombre de la Certificación: Diploma Educación Media Superior
+              {t('certificationNameHighSchool')}: {t('highSchoolDiploma')}
               <br />
-              Fecha de Obtención: 2014
+              {t('fechaObtencion')}: 2014
             </li>
             <li className="mb-4">
-              {" "}
-              {/* mb-4 agrega margen inferior a cada elemento de la lista */}
-              Nombre de la Certificación: Professional Developer
+              {t('certificationNameProfessionalDeveloper')}: {t('professionalDeveloper')}
               <br />
-              Fecha de Obtención: 2023
+              {t('fechaObtencion')}: 2023
             </li>
             {/* Agrega más certificaciones según sea necesario */}
           </ul>
@@ -171,12 +150,10 @@ const Home = () => {
 
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-800 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">Habilidades</h2>
+          <h2 className="text-xl font-semibold mb-2">{t('skills')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <h3 className="text-lg font-semibold">
-                Lenguajes de Programación
-              </h3>
+              <h3 className="text-lg font-semibold">{t('programmingLanguages')}</h3>
               <ul className="list-disc pl-6">
                 <li>Java</li>
                 <li>JavaScript</li>
@@ -193,15 +170,15 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Frameworks</h3>
+              <h3 className="text-lg font-semibold">{t('frameworks')}</h3>
               <ul className="list-disc pl-6">
-                <li>React (Desarrollo web)</li>
+                <li>React ({t('webDevelopment')})</li>
                 {/* Agrega más frameworks según sea necesario */}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Desarrollo Back-End</h3>
+              <h3 className="text-lg font-semibold">{t('backendDevelopment')}</h3>
               <ul className="list-disc pl-6">
                 <li>Spring Boot</li>
                 <li>Hibernate</li>
@@ -210,7 +187,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Bases de Datos</h3>
+              <h3 className="text-lg font-semibold">{t('databases')}</h3>
               <ul className="list-disc pl-6">
                 <li>SQL</li>
                 <li>Informix</li>
@@ -220,23 +197,21 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Habilidades Técnicas</h3>
+              <h3 className="text-lg font-semibold">{t('technicalSkills')}</h3>
               <ul className="list-disc pl-6">
-                <li>
-                  Desarrollo y contribuciones en proyectos Back-End y Front-End.
-                </li>
-                <li>Experiencia con servicios en la nube: AWS (EC2, S3).</li>
-                <li>Metodologías ágiles.</li>
-                <li>Control de versiones: GIT.</li>
-                <li>Pruebas Unitarias.</li>
+                <li>{t('developmentAndContributions')}</li>
+                <li>{t('cloudServices')}: AWS (EC2, S3)</li>
+                <li>{t('agileMethodologies')}</li>
+                <li>{t('versionControl')}: GIT</li>
+                <li>{t('unitTesting')}</li>
                 {/* Agrega más habilidades técnicas según sea necesario */}
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Redes</h3>
+              <h3 className="text-lg font-semibold">{t('networks')}</h3>
               <ul className="list-disc pl-6">
-                <li>Conocimientos básicos en networking.</li>
+                <li>{t('basicKnowledgeInNetworking')}</li>
                 {/* Agrega más habilidades de redes según sea necesario */}
               </ul>
             </div>

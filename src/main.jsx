@@ -10,6 +10,8 @@ import Navbar from './components/NavBar.jsx'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import Home from './pages/Home.jsx'
+import i18n from './components/i18n.jsx'
+import { LanguageProvider } from './context/LanguajeContext.jsx';
 
 library.add(fab);
 
@@ -17,10 +19,12 @@ library.add(fab);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <LanguageProvider i18n={i18n}>
       <Header />
       <Navbar />
     <App />
     <Footer />
+    </LanguageProvider>
 
   </BrowserRouter>
 )
