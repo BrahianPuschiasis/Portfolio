@@ -9,6 +9,9 @@ This project showcases the curriculum vitae of Brahian Puschiasis, a software de
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A fast, opinionated frontend build tool that sets up quickly.
 - **Tailwind CSS**: A utility-first CSS framework for building modern web designs.
+- **i18n**: Internationalization library used for language translation between English and Spanish.
+- **Font Awesome**: A popular icon set and toolkit for adding vector icons to web projects.
+
 
 ## Project Structure
 
