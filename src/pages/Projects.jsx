@@ -5,7 +5,9 @@ import React, { useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { useLanguage } from '../context/LanguajeContext.jsx'
 import { useTranslation } from 'react-i18next';
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Projects = () => {
 
@@ -15,12 +17,19 @@ const Projects = () => {
   useEffect(() => {
   }, [language]);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
 
   return (
     <div className="font-sans bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white">
       <section className="container mx-auto my-8">
-        {/* <div className="bg-gray dark:bg-slate-800 p-4 shadow-md rounded-md"> */}
-        {/* <h2 className="text-xl font-semibold mb-2">Experiencia y Proyectos</h2> */}
+      <Slider {...settings}>
 
         <div className="mb-8">
           {" "}
@@ -145,7 +154,8 @@ const Projects = () => {
         </div>
 
         {/* Add more ProjectCard components for other projects */}
-        {/* </div> */}
+
+        </Slider>
       </section>
     </div>
   );

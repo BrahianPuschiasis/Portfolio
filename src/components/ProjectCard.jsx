@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
 import PropTypes from 'prop-types';
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLanguage } from '../context/LanguajeContext.jsx';
 import { useTranslation } from 'react-i18next';
 
