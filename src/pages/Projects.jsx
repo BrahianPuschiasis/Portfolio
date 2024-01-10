@@ -118,14 +118,6 @@ const Projects = () => {
                 title: "Video 1",
                 url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
               },
-              {
-                title: "Video 2",
-                url: "https://www.youtube.com/embed/I_ASPHPQZP8",
-              },
-              {
-                title: "Video 3",
-                url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
-              },
             ]}
           />
         </div>
