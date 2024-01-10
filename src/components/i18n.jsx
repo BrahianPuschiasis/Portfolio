@@ -93,11 +93,18 @@ const resources = {
   projectNameJuntos: "Together",
   resumeTitle:"Resume",
  softwareDeveloper:"Software Developer",
-
+ certificationName:'Certification Name',
     },
   },
+
+
+  
   es: {
+
     translation: {
+
+        certificationName:'Nombre de la Certificación',
+
       webDevelopment: "Desarrollo y mantenimiento de aplicaciones web.",
       onCourse: "En curso",
       deployedPage: "Página Desplegada",

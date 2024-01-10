@@ -124,22 +124,22 @@ const Home = () => {
           <h2 className="text-xl font-semibold mb-2">{t('certifications')}</h2>
           <ul className="list-disc pl-6 space-y-4">
             <li className="mb-4">
-              {t('certificationNameItalian')}: {t('italianBasicDiploma')}
+              {t('certificationName')}: {t('italianBasicDiploma')}
               <br />
               {t('fechaObtencion')}: 2011
             </li>
             <li className="mb-4">
-              {t('certificationNamePortuguese')}: {t('portugueseBasicDiploma')}
+              {t('certificationName')}: {t('portugueseBasicDiploma')}
               <br />
               {t('fechaObtencion')}: 2011
             </li>
             <li className="mb-4">
-              {t('certificationNameHighSchool')}: {t('highSchoolDiploma')}
+              {t('certificationName')}: {t('highSchoolDiploma')}
               <br />
               {t('fechaObtencion')}: 2014
             </li>
             <li className="mb-4">
-              {t('certificationNameProfessionalDeveloper')}: {t('professionalDeveloper')}
+              {t('certificationName')}: {t('professionalDeveloper')}
               <br />
               {t('fechaObtencion')}: 2023
             </li>
@@ -202,7 +202,7 @@ const Home = () => {
                 <li>{t('developmentAndContributions')}</li>
                 <li>{t('cloudServices')}: AWS (EC2, S3)</li>
                 <li>{t('agileMethodologies')}</li>
-                <li>{t('versionControl')}: GIT</li>
+                <li>{t('versionControl')}</li>
                 <li>{t('unitTesting')}</li>
                 {/* Agrega más habilidades técnicas según sea necesario */}
               </ul>
