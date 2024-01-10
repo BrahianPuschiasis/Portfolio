@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
   }, [language]);
 
   return (
-    <div className="mb-8 p-4 bg-white dark:bg-slate-800 shadow-md rounded-md">
+    <div className="mb-8 p-4 bg-white dark:bg-slate-900 shadow-md rounded-md">
       <h3 className="text-lg font-semibold">{title}</h3>
       <div className="mb-4"></div>
       <p>{description}</p>

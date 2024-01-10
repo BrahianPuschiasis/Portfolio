@@ -14,7 +14,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-gray-700 dark:bg-gray-800 text-white p-4">
+    <footer className="bg-gray-700 dark:bg-gray-900 text-white p-4">
     <p className="text-center">
       &copy; 2024 Brahian Puschiasis. {t('allRightsReserved')}
     </p>

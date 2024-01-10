@@ -1,14 +1,12 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: 'class',
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",],
-  theme: {
-    extend: {},
-    
-  },
-  plugins: [],
-  
+    './src/pages/**/*.{html,jsx}',
+    './src/components/**/*.{html,jsx}',
+    './index.html',
+    './App.jsx',
+    './main.jsx',
+  ],
+  // ...
 }
-

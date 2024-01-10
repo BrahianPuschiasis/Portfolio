@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
 const Projects = () => {
 
   const { language } = useLanguage();
@@ -17,13 +16,18 @@ const Projects = () => {
   useEffect(() => {
   }, [language]);
 
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
+
   };
+  
+  
 
 
   return (

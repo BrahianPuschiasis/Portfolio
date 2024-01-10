@@ -19,7 +19,7 @@ const Header = () => {
 
 
   return (
-    <header className="bg-blue-500 dark:bg-gray-900 text-white p-4">
+    <header className="bg-blue-500 dark:bg-slate-900 text-white p-4">
       <h1 className="text-3xl font-semibold">{t('resumeTitle')}</h1>
       <p className="text-sm">{t('softwareDeveloper')}</p>
     </header>
