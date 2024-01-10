@@ -42,8 +42,31 @@ const Projects = () => {
                 url: "https://github.com/BrahianPuschiasis/FourSenses",
               },
             ]}
+            videos={[
+              {
+                title: "Project",
+                url: "https://www.youtube.com/embed/l2AfD1s7cDQ",
+              },
+            ]}
           />
         </div>
+
+        <div className="mb-8">
+          {" "}
+          {/* Add margin bottom to create separation */}
+          <ProjectCard
+          title={t('noteTitle')}
+          description={t('noteDescription')}
+                      videos={[
+              {
+                title: "Note App",
+                url: "https://www.youtube.com/embed/3qvPVZU_uDE",
+              },
+            ]}
+          />
+        </div>
+
+
 
         <div className="mb-8">
           {" "}

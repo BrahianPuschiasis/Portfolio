@@ -94,6 +94,11 @@ const resources = {
   resumeTitle:"Resume",
  softwareDeveloper:"Software Developer",
  certificationName:'Certification Name',
+
+ "noteTitle": "Notes App",
+  "noteDescription": "It is a full-stack application that uses an H2 database with Spring Boot + Hibernate, React + Vite. It allows managing notes, adding/modifying/deleting them, adding or removing categories, creating new categories, and filtering notes by categories. Additionally, notes can be archived and unarchived.",
+
+
     },
   },
 
@@ -102,6 +107,9 @@ const resources = {
   es: {
 
     translation: {
+
+      noteTitle:"Notas App",
+      noteDescription: "Es una aplicación full stack que utiliza una base de datos H2 con Spring Boot + Hibernate, React + Vite. Permite gestionar notas, agregar/modificar/eliminarlas, añadir categorías o quitarlas, crear nuevas categorías y filtrar las notas por categorías. Además, se pueden archivar y desarchivar las notas.",
 
         certificationName:'Nombre de la Certificación',
 
