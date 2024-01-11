@@ -3,10 +3,17 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import React, { useContext } from 'react';
 import { useLanguage } from '../context/LanguajeContext.jsx';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+// import { useTheme } from '../context/ThemeContext.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 const Navbar = () => {
   const { i18n } = useTranslation();
   const { toggleLanguage, language } = useLanguage(); 
+  // const { toggleDarkMode, isDarkMode } = useTheme();
+
 
   const toggleLanguageHandler = () => {
     const newLanguage = language === 'en' ? 'es' : 'en';
@@ -28,6 +35,18 @@ const Navbar = () => {
             {language === 'en' ? 'ES' : 'EN'}
           </button>
         </div>
+        {/* <div className="ml-4">
+          <button
+            onClick={toggleDarkMode}
+            className="text-white hover:text-blue-400 focus:outline-none"
+          >
+            {isDarkMode ? (
+              <FontAwesomeIcon icon={faSun} className="text-xl" />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} className="text-xl" />
+            )}
+          </button>
+        </div> */}
       </div>
     </nav>
   );

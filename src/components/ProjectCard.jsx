@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { useLanguage } from '../context/LanguajeContext.jsx';
 import { useTranslation } from 'react-i18next';
+// import { useTheme } from '../context/ThemeContext';
+
+
 
 const ProjectCard = ({ title, description, repositories, videos }) => {
   const { language } = useLanguage();
   const { t } = useTranslation();
+  // const { isDarkMode, toggleDarkMode } = useTheme();
+
 
   useEffect(() => {
   }, [language]);

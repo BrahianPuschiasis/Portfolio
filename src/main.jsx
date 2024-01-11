@@ -12,6 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import Home from './pages/Home.jsx'
 import i18n from './components/i18n.jsx'
 import { LanguageProvider } from './context/LanguajeContext.jsx';
+// import { ThemeProvider  } from './context/ThemeContext.jsx';
 
 library.add(fab);
 
@@ -19,12 +20,14 @@ library.add(fab);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+    {/* <ThemeProvider> */}
+
   <LanguageProvider i18n={i18n}>
       <Header />
       <Navbar />
     <App />
     <Footer />
     </LanguageProvider>
-
+    {/* </ThemeProvider> */}
   </BrowserRouter>
 )

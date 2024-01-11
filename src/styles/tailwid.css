@@ -611,6 +611,7 @@ video {
 
 .slick-prev:before, .slick-next:before {
   font-size: 25px !important; /* Cambia este valor al tamaño que desees */
+  -webkit-text-fill-color: black;
 }
 
 
@@ -1134,5 +1135,15 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 25px !important; 
+    -webkit-text-fill-color: white;
+    
+  }
+
+
+  
+  
 }
 
