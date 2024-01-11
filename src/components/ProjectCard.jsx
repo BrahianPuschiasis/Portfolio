@@ -49,8 +49,6 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
             {videos.map((video, index) => (
               <iframe
                 key={index}
-                width="560"
-                height="315"
                 src={video.url}
                 title={video.title}
                 frameBorder="0"
