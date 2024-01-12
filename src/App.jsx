@@ -8,6 +8,7 @@ import './styles/tailwid.css'
 function App() {
   return (
     <Routes>
+    <Route path='/' element={<Home />} />
     <Route path='/curriculum' element={<Home />} />
     <Route path='/projects' element={<Projects />} />
 
