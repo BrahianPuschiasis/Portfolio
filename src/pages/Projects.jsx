@@ -50,7 +50,7 @@ const Projects = () => {
               videos={[
                 {
                   title: "Project",
-                  url: "https://youtu.be/-fNpYFmmJc4?si=JZxWMVo8ZpeBX62o",
+                  url: "https://www.youtube.com/embed/-fNpYFmmJc4",
                 },
               ]}
             />
