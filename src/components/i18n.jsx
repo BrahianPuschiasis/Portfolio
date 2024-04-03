@@ -47,7 +47,7 @@ const resources = {
       certificationDateProfessionalDeveloper: "2023",
       skills: "Skills",
       programmingLanguages: "Programming Languages",
-      frameworks: "Frameworks",
+      frameworks: "FrontEnd Development",
       backendDevelopment: "Backend Development",
       databases: "Databases",
       technicalSkills: "Technical Skills",
@@ -95,12 +95,20 @@ const resources = {
  softwareDeveloper:"Software Developer",
  certificationName:'Certification Name',
 
- "noteTitle": "Notes App",
-  "noteDescription": "It is a full-stack application that uses an H2 database with Spring Boot + Hibernate, React + Vite. It allows managing notes, adding/modifying/deleting them, adding or removing categories, creating new categories, and filtering notes by categories. Additionally, notes can be archived and unarchived.",
+ noteTitle: "Notes App",
+  noteDescription: "It is a full-stack application that uses an H2 database with Spring Boot + Hibernate, React + Vite. It allows managing notes, adding/modifying/deleting them, adding or removing categories, creating new categories, and filtering notes by categories. Additionally, notes can be archived and unarchived.",
+
+  microTitle: "Netflix-style Microservice",
+  microDescription: "It's a BackEnd project that handles microservices, similar to modern streaming platforms like Netflix/Primevideo. It stores movies in its own MySQL database, series in its MongoDB database, and both are accessed through the Catalog microservice, which is accessed through a Gateway and uses Feign to communicate with movies and series (two separate microservices).The project uses RabbitMQ (for queue management), Zipkin (tracing), an API gateway, Eureka (self-discovery server), FeignClient, Spring Cloud, Resilience4j (circuit breaker); it's programmed in Java + Spring 3.X and have all the configs files in yml centralized in the repository linked below.The challenge letter is available in its repository, as well as its implementation."
+  
 
 
     },
   },
+
+
+
+
 
 
   
@@ -175,7 +183,7 @@ const resources = {
 
       skills: "Habilidades",
       programmingLanguages: "Lenguajes de Programación",
-      frameworks: "Frameworks",
+      frameworks: "Desarrollo Front-End",
       backendDevelopment: "Desarrollo Back-End",
       databases: "Bases de Datos",
       technicalSkills: "Habilidades Técnicas",
@@ -205,9 +213,10 @@ const resources = {
   
  oldProjectsTitle: "Proyectos Viejos",
   oldProjectsDescription: "Tengo proyectos en C++, C#, Pascal, Batch, Shell, pero son muy viejos, de cuando cursaba bachillerato o mis primeros semestres de facultad. No utilizaba GitHub en ese entonces, así que tampoco los tengo en mis repositorios. Eran proyectos estilo armar una biblioteca virtual, control de usuarios, de productos, etc. Cosas bastante estándar. Lo único que puede resaltar es que terminé usando sistemas complejos de ordenado de datos en C# como árbol binario, o que tanto en C# como en C++ usaba punteros de memoria para almacenar datos, archivos binarios también o de texto plano.",
-  allRightsReserved: 'Todos los derechos reservados.'
+  allRightsReserved: 'Todos los derechos reservados.',
 
-
+  microTitle: "Micro Servicio estilo Netflix",
+  microDescription: "Es un proyecto de BackEnd que maneja microservicios, similar a plataformas de streaming modernas como Netflix/Primevideo. Almacena películas en su propia base de datos MySQL, series en su base de datos MongoDB, y ambas se acceden a través del microservicio Catálogo, el cual se accede mediante un Gateway y utiliza Feign para comunicarse con películas y series (dos microservicios separados).El proyecto utiliza RabbitMQ (para gestión de colas), Zipkin (trazabilidad), un gateway de API, Eureka (servidor de autodescubrimiento), FeignClient, Spring Cloud, Resilience4j (interruptor de circuito); está programado en Java + Spring 3.X, y tiene todas las configuraciones programadas en yml, en su propio repositorio linkeado debajo. La carta de desafío está disponible en su repositorio, así como su implementación."
 
     },
   },

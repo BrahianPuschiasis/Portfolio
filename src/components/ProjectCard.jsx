@@ -1,20 +1,16 @@
 /* eslint-disable no-unused-vars */
-import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
-import { useLanguage } from '../context/LanguajeContext.jsx';
-import { useTranslation } from 'react-i18next';
+import PropTypes from "prop-types";
+import React, { useEffect } from "react";
+import { useLanguage } from "../context/LanguajeContext.jsx";
+import { useTranslation } from "react-i18next";
 // import { useTheme } from '../context/ThemeContext';
-
-
 
 const ProjectCard = ({ title, description, repositories, videos }) => {
   const { language } = useLanguage();
   const { t } = useTranslation();
   // const { isDarkMode, toggleDarkMode } = useTheme();
 
-
-  useEffect(() => {
-  }, [language]);
+  useEffect(() => {}, [language]);
 
   return (
     <div className="mb-8 p-4 bg-white dark:bg-slate-900 shadow-md rounded-md">
@@ -24,7 +20,7 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
       <div className="mb-4"></div>
       {repositories && (
         <div className="mt-2">
-          <p className="font-semibold">{t('repositories')}:</p>
+          <p className="font-semibold">{t("repositories")}:</p>
           <ul className="list-disc pl-6">
             {repositories.map((repo, index) => (
               <li key={index} className="group">
@@ -45,7 +41,7 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
       {videos && (
         <div className="mt-2">
           <p className="font-semibold">Videos:</p>
-          <div className="space-y-2">
+          <>
             {videos.map((video, index) => (
               <iframe
                 key={index}
@@ -56,7 +52,7 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
                 allowFullScreen
               ></iframe>
             ))}
-          </div>
+          </>
         </div>
       )}
     </div>
