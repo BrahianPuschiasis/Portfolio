@@ -87,6 +87,50 @@ const Projects = () => {
             />
           </div>
 
+          {/*Educational System*/}
+          <div className="mb-8">
+            {" "}
+            {/* Add margin bottom to create separation */}
+            <ProjectCard
+              title={t("educationalSystem")}
+              description={t("educationalDesc")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/SystemEducational",
+                },
+              ]}
+              videos={[
+                {
+                  title: "Video 1",
+                  url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
+                },
+              ]}
+            />
+          </div>
+
+          {/* Replica de Pokemon */}
+          <div className="mb-8">
+            {" "}
+            {/* Add margin bottom to create separation */}
+            <ProjectCard
+              title={t("replicaPokemonTitle")}
+              description={t("replicaPokemonDescription")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/Pokemon",
+                },
+              ]}
+              videos={[
+                {
+                  title: "Video 1",
+                  url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
+                },
+              ]}
+            />
+          </div>
+
           {/* Notas app para ensolvers */}
           <div className="mb-8">
             {" "}
@@ -94,6 +138,12 @@ const Projects = () => {
             <ProjectCard
               title={t("noteTitle")}
               description={t("noteDescription")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/NotesAPP",
+                },
+              ]}
               videos={[
                 {
                   title: "Note App",
@@ -139,22 +189,6 @@ const Projects = () => {
                 {
                   name: t("deployedPage"),
                   url: "https://brahianpuschiasis.github.io/FinalFront/",
-                },
-              ]}
-            />
-          </div>
-
-          {/* Replica de Pokemon */}
-          <div className="mb-8">
-            {" "}
-            {/* Add margin bottom to create separation */}
-            <ProjectCard
-              title={t("replicaPokemonTitle")}
-              description={t("replicaPokemonDescription")}
-              videos={[
-                {
-                  title: "Video 1",
-                  url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
                 },
               ]}
             />
