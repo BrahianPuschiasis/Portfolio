@@ -211,6 +211,8 @@ const Home = () => {
                 <li>Spring Cloud</li>
                 <li>Resilence4j</li>
                 <li>MicroServices</li>
+                <li>RabbitMQ</li>
+                <li>KeyCloak</li>
                 <li>Centraliced Configuration</li>
                 {/* Agrega más tecnologías Back-End según sea necesario */}
               </ul>
