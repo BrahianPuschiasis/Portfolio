@@ -136,6 +136,37 @@ const Projects = () => {
           </div>
 
 
+          {/*Biblioteca*/}
+          <div className="mb-8">
+            {" "}
+            {/* Add margin bottom to create separation */}
+            <ProjectCard
+              title={t("bibliotecaTitle")}
+              description={t("bibliotecaDesc")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/Biblioteca",
+                },
+              ]}
+            />
+          </div>
+
+          {/*BusSystem*/}
+          <div className="mb-8">
+            {" "}
+            {/* Add margin bottom to create separation */}
+            <ProjectCard
+              title={t("busTitle")}
+              description={t("busDesc")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/BusSystem",
+                },
+              ]}
+            />
+          </div>
 
           {/* Notas app para ensolvers */}
           <div className="mb-8">

@@ -104,11 +104,19 @@ const resources = {
 
   
     educationalSystem: "UTU Education System",
-    educationalDesc: "Final project of ITS, third year. It is a large project, well documented in the repository, with its corresponding budget, database tables with ERD and normalizations, network functions/operating system to be used, project timeline, company name, among other topics. It consists of an application that manages subjects, institutes, groups, courses, students, and teachers of all UTU institutions in Uruguay. It allows assigning absences, grades, averages, exam and partial exam dates. It generates a report for both partial exams and final exams, divided by their respective institutes, groups, and teachers. It allows the registration of people within the institution with their corresponding role, which grants or denies access to certain functions of the application. Using mySQL and vb.net."
+    educationalDesc: "Final project of ITS, third year. It is a large project, well documented in the repository, with its corresponding budget, database tables with ERD and normalizations, network functions/operating system to be used, project timeline, company name, among other topics. It consists of an application that manages subjects, institutes, groups, courses, students, and teachers of all UTU institutions in Uruguay. It allows assigning absences, grades, averages, exam and partial exam dates. It generates a report for both partial exams and final exams, divided by their respective institutes, groups, and teachers. It allows the registration of people within the institution with their corresponding role, which grants or denies access to certain functions of the application. Using mySQL and vb.net.",
 
 
   
-  
+    bibliotecaTitle: "Library - Shell Script",
+    bibliotecaDesc:"Project done for Operating Systems II at ITS. It consists of programming 100% in Shell Script a library of books, videos, magazines, and writings. It allows performing CRUD operations on these elements, as well as registering users to make loans of the same. It tracks loans and the number of items, and informs upon entering if there are overdue returns taking dates into account. To do this, .txt files are manipulated through Shell Script to perform CRUD operations on the corresponding data.",
+    
+    busTitle: "Bus System - C/C++",
+    busDesc:"Project done for Programming II at ITS. It consists of a program made in Turbo C/C++, which allows CRUD operations for a bus system to register: buses, routes, trips, tickets, among other data written in the readme.md of the repository. Everything is done in binary files by the same program.",
+
+    navHome:"Home",
+    navProject:"Projects"
+    
 
 
     },
@@ -226,9 +234,18 @@ const resources = {
   microDescription: "Es un proyecto de BackEnd que maneja microservicios, similar a plataformas de streaming modernas como Netflix/Primevideo. Almacena películas en su propia base de datos MySQL, series en su base de datos MongoDB, y ambas se acceden a través del microservicio Catálogo, el cual se accede mediante un Gateway y utiliza Feign para comunicarse con películas y series (dos microservicios separados).El proyecto utiliza RabbitMQ (para gestión de colas), Zipkin (trazabilidad), un gateway de API, Eureka (servidor de autodescubrimiento), FeignClient, Spring Cloud, Resilience4j (interruptor de circuito); está programado en Java + Spring 3.X, y tiene todas las configuraciones programadas en yml, en su propio repositorio linkeado debajo. La carta de desafío está disponible en su repositorio, así como su implementación.",
 
   educationalSystem: "Sistema de Educación UTU",
-  educationalDesc: "Proyecto final del ITS, tercer año. El mismo consiste en un proyecto grande, el cual está muy bien documentado en el repositorio, con su correspondiente presupuesto, tablas de la base de datos con MER y normalizaciones, funciones de red/sistema operativo a usar, tiempo del proyecto, nombre de la empresa, entre otros temas. Consiste en una aplicación que administra las materias, institutos, grupos, cursos, alumnos y docentes de todas las instituciones de UTU del Uruguay. En la misma se pueden asignar inasistencias, notas, promedios, fechas de exámenes y parciales. Genera un boletín tanto para los parciales como exámenes, divididos por sus correspondientes institutos, grupos y docentes. Permite el registro de las personas dentro de la institución con su correspondiente rol, el cual permite o deniega acceso a ciertas funciones de la aplicación. Usando mySQL y vb.net"
-  
+  educationalDesc: "Proyecto final del ITS, tercer año. El mismo consiste en un proyecto grande, el cual está muy bien documentado en el repositorio, con su correspondiente presupuesto, tablas de la base de datos con MER y normalizaciones, funciones de red/sistema operativo a usar, tiempo del proyecto, nombre de la empresa, entre otros temas. Consiste en una aplicación que administra las materias, institutos, grupos, cursos, alumnos y docentes de todas las instituciones de UTU del Uruguay. En la misma se pueden asignar inasistencias, notas, promedios, fechas de exámenes y parciales. Genera un boletín tanto para los parciales como exámenes, divididos por sus correspondientes institutos, grupos y docentes. Permite el registro de las personas dentro de la institución con su correspondiente rol, el cual permite o deniega acceso a ciertas funciones de la aplicación. Usando mySQL y vb.net",
 
+
+  bibliotecaTitle: "Biblioteca - Shell Script",
+  bibliotecaDesc:"Proyecto hecho para Sistemas Operativos II en el ITS. Consiste en programar 100% en Shell Script una biblioteca de libros, videos, revistas y escritos. Permite realizar CRUD de estos elementos, además de registrar usuarios para realizar préstamos de los mismos. Se hace seguimiento de los préstamos y la cantidad de ítems, y se informa al momento de ingresar si hay devoluciones atrasadas teniendo en cuenta las fechas. Para ello, se manipulan archivos .txt por medio de Shell Script para realizar CRUD de los datos correspondientes.",
+
+
+  busTitle: "Sistema de Buses - C/C++",
+  busDesc:"Proyecto hecho para Programación II en el ITS. Consiste en un programa hecho en Turbo C/C++, el cual permite CRUD de un sistema de buses para registrar: ómnibus, recorridos, viajes, pasajes, entre otros datos escritos en el readme.md del repositorio. Todo está hecho en archivos binarios por el mismo programa.",
+
+     navHome:"Inicio",
+    navProject:"Proyectos"
 
     },
   },
