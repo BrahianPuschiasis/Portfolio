@@ -87,8 +87,8 @@ const Projects = () => {
             />
           </div>
 
-                    {/* Replica de Pokemon */}
-                    <div className="mb-8">
+          {/* Replica de Pokemon */}
+          <div className="mb-8">
             {" "}
             {/* Add margin bottom to create separation */}
             <ProjectCard
@@ -135,6 +135,28 @@ const Projects = () => {
             />
           </div>
 
+          {/* Proyecto personal Haxball */}
+
+          <div className="mb-8">
+            {" "}
+            {/* Add margin bottom to create separation */}
+            <ProjectCard
+              title={t("personalProjectVBHaxballTitle")}
+              description={t("personalProjectVBHaxballDescription")}
+              repositories={[
+                {
+                  name: "Code",
+                  url: "https://github.com/BrahianPuschiasis/AUH",
+                },
+              ]}
+              videos={[
+                {
+                  title: "Video 1",
+                  url: "https://www.youtube.com/embed/XZuIXC1x4f8",
+                },
+              ]}
+            />
+          </div>
 
           {/*Biblioteca*/}
           <div className="mb-8">
@@ -147,6 +169,12 @@ const Projects = () => {
                 {
                   name: "Code",
                   url: "https://github.com/BrahianPuschiasis/Biblioteca",
+                },
+              ]}
+              videos={[
+                {
+                  title: "Video 1",
+                  url: "https://www.youtube.com/embed/AKv6Dq2DutA",
                 },
               ]}
             />
@@ -226,23 +254,6 @@ const Projects = () => {
                 {
                   name: t("deployedPage"),
                   url: "https://brahianpuschiasis.github.io/FinalFront/",
-                },
-              ]}
-            />
-          </div>
-
-          {/* Proyecto personal Haxball */}
-
-          <div className="mb-8">
-            {" "}
-            {/* Add margin bottom to create separation */}
-            <ProjectCard
-              title={t("personalProjectVBHaxballTitle")}
-              description={t("personalProjectVBHaxballDescription")}
-              repositories={[
-                {
-                  name: "Code",
-                  url: "https://github.com/BrahianPuschiasis/AUH",
                 },
               ]}
             />
