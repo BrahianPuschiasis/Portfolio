@@ -30,7 +30,7 @@ const Home = () => {
             <p>
               <strong>{t("linkedIn")}:</strong>{" "}
               <a
-                href="https://www.linkedin.com/in/brahian-puschiasis-948972234/"
+                href="https://www.linkedin.com/in/brahian-puschiasis/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

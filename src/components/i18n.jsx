@@ -25,7 +25,7 @@ const resources = {
       linkedIn: "LinkedIn",
       github: "GitHub",
       developerExperience:
-        "Full Stack Developer - No work experience at the moment",
+        "Full Stack Developer/Back End",
       education: "Education",
       highSchool: "High School Diploma",
       professionalDeveloper: "Professional Developer",
@@ -172,7 +172,7 @@ const resources = {
       linkedIn: "LinkedIn",
       github: "GitHub",
       developerExperience:
-        "Desarrollador Full Stack - Sin experiencia laboral de momento",
+        "Desarrollador Full Stack/Back End",
       education: "Educación",
       highSchool: "Bachiller Tecnológico",
       professionalDeveloper: "Professional Developer",
