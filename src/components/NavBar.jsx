@@ -41,7 +41,7 @@ localStorage.removeItem('theme')
   useEffect(() => {}, [language]);
 
   return (
-    <nav className="bg-gray-800 p-2">
+    <nav className="bg-blue-500 dark:bg-slate-900 p-2">
       <div className="container mx-auto flex items-center justify-center">
         <div className="text-white ">
           <Link
