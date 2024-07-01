@@ -14,11 +14,12 @@ const Home = () => {
 
   return (
     <div className="font-sans bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white">
-      <section className="container mx-auto my-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          
+
+     {/* Personal Information y work experience container*/}
+      {/* <section className="container mx-auto my-8"> */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4"> */}
           {/* Personal Information */}
-          <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
+          {/* <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
             <h2 className="text-xl font-semibold mb-2">{t("personalInfo")}</h2>
             <p>
               <strong>{t("name")}:</strong> Brahian Puschiasis
@@ -55,9 +56,10 @@ const Home = () => {
                 />
               </a>
             </p>
-          </div>
+          </div> */}
+
           {/* Experiencia laboral */}
-          <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
+          {/* <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
             <h2 className="text-xl font-semibold mb-2">
               {t("workExperience")}
             </h2>
@@ -74,13 +76,12 @@ const Home = () => {
                 <li>{t("unitTesting")}</li>
               </ul>
             </div>
-            {/* Agrega más experiencias laborales según sea necesario */}
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+       {/* </section> */}
 
-          {/* Habilidades */}
-          <section className="container mx-auto my-8">
+      {/* Habilidades */}
+      <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
           <h2 className="text-xl font-semibold mb-2">{t("skills")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -166,7 +167,6 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Estudios */}
       <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
@@ -178,19 +178,19 @@ const Home = () => {
           </div>
 
           <div className="mb-4">
-            <div>
-              <p className="text-lg font-semibold">{t("computerEngineer")}</p>
-              <p className="text-sm">Facultad de Ingeniería (UDELAR)</p>
-              <p className="text-sm">2020 - {t("onCourse")}</p>
-            </div>
-          </div>
-
-          <div className="mb-4">
             <p className="text-lg font-semibold">
               {t("professionalDeveloper")}
             </p>
             <p className="text-sm">Universidad Tecnológica del Uruguay</p>
             <p className="text-sm">2022 - 2023</p>
+          </div>
+
+          <div className="mb-4">
+            <div>
+              <p className="text-lg font-semibold">{t("computerEngineer")}</p>
+              <p className="text-sm">Facultad de Ingeniería (UDELAR)</p>
+              <p className="text-sm">2020 - {t("onCourse")}</p>
+            </div>
           </div>
 
           <div className="mb-4">
@@ -257,8 +257,6 @@ const Home = () => {
           </ul>
         </div>
       </section>
-
-
     </div>
   );
 };
