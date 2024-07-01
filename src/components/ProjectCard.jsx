@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, repositories, videos, languages }) =>
     <div className="mb-8 p-4 bg-white dark:bg-slate-900 shadow-md rounded-md">
       <h3 className="text-lg font-semibold">{title}</h3>
       <div className="mb-4"></div>
-      <div className="flex mb-2">
+      <div className="mb-4 space-y-4">
         {languages &&
           languages.map((lang, index) => (
             <span
