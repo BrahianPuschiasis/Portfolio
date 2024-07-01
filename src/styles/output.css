@@ -18,6 +18,14 @@
   font-size: 25px !important; 
   -webkit-text-fill-color: black;
 }
+.language-badge {
+  border-radius: 999px; /* Hace que el borde sea completamente redondeado */
+  display: inline-flex; /* Para que el borde se ajuste al contenido */
+  align-items: center; /* Alinea el contenido verticalmente */
+  padding: 0.5rem 1rem; /* Ajusta el espacio dentro del círculo */
+  margin-right: 0.5rem; /* Ajusta el margen entre los círculos */
+
+}
 
 
 /* Styles for the Modal and Overlay */

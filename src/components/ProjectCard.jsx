@@ -3,12 +3,10 @@ import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { useLanguage } from "../context/LanguajeContext.jsx";
 import { useTranslation } from "react-i18next";
-// import { useTheme } from '../context/ThemeContext';
 
-const ProjectCard = ({ title, description, repositories, videos }) => {
+const ProjectCard = ({ title, description, repositories, videos, languages }) => {
   const { language } = useLanguage();
   const { t } = useTranslation();
-  // const { isDarkMode, toggleDarkMode } = useTheme();
 
   useEffect(() => {}, [language]);
 
@@ -16,6 +14,21 @@ const ProjectCard = ({ title, description, repositories, videos }) => {
     <div className="mb-8 p-4 bg-white dark:bg-slate-900 shadow-md rounded-md">
       <h3 className="text-lg font-semibold">{title}</h3>
       <div className="mb-4"></div>
+      <div className="flex mb-2">
+        {languages &&
+          languages.map((lang, index) => (
+            <span
+              key={index}
+              className="inline-block rounded-full px-3 py-1 text-sm mr-2 language-badge"
+              style={{
+                backgroundColor: lang.backgroundColor,
+                color: lang.textColor,
+              }}
+            >
+              {lang.name}
+            </span>
+          ))}
+      </div>
       <p>{description}</p>
       <div className="mb-4"></div>
       {repositories && (
@@ -72,6 +85,13 @@ ProjectCard.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
+    })
+  ),
+  languages: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      backgroundColor: PropTypes.string.isRequired,
+      textColor: PropTypes.string.isRequired,
     })
   ),
 };

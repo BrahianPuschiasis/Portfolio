@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Projects = () => {
   const { language } = useLanguage();
   const { t } = useTranslation();
@@ -30,7 +29,6 @@ const Projects = () => {
         <Slider {...settings}>
           {/* Micro Servicios proyecto */}
           <div className="mb-8">
-            {" "}
             {/* Add margin bottom to create separation */}
             <ProjectCard
               title={t("microTitle")}
@@ -50,6 +48,18 @@ const Projects = () => {
                   title: "Project",
                   url: "https://www.youtube.com/embed/-fNpYFmmJc4",
                 },
+              ]}
+              languages={[
+                { name: "Java", textColor:"black", backgroundColor: "orange",  },
+                { name: "mySQL", textColor:"white",backgroundColor: "gray" },
+                { name: "mongoDB", textColor:"white",backgroundColor: "gray" },
+                { name: "Spring Boot", textColor:"black",backgroundColor: "green" },
+                { name: "Spring Cloud", textColor:"black",backgroundColor: "green" },
+                { name: "RabbitMQ", textColor:"white",backgroundColor: "black" },
+                { name: "Zipkin", textColor:"white",backgroundColor: "black" },
+                { name: "Resilence4j", textColor:"white",backgroundColor: "black" },
+
+
               ]}
             />
           </div>
@@ -82,6 +92,20 @@ const Projects = () => {
                   url: "https://www.youtube.com/embed/l2AfD1s7cDQ",
                 },
               ]}
+              languages={[
+                { name: "Java", textColor:"black", backgroundColor: "orange",  },
+                { name: "JavaScript", textColor:"black", backgroundColor: "orange",  },
+                { name: "mySQL", textColor:"white",backgroundColor: "gray" },
+                { name: "AWS", textColor:"white",backgroundColor: "gray" },
+                { name: "Spring Boot", textColor:"black",backgroundColor: "green" },
+                { name: "Spring Cloud", textColor:"black",backgroundColor: "green" },
+                { name: "Spring Security", textColor:"black",backgroundColor: "green" },
+                { name: "CSS", textColor:"white",backgroundColor: "purple" },
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
+                { name: "React", textColor:"black",backgroundColor: "cyan" },
+
+
+              ]}
             />
           </div>
 
@@ -108,6 +132,12 @@ const Projects = () => {
                   url: "https://www.youtube.com/embed/3OV3Jw_5BXs",
                 },
               ]}
+              languages={[
+                { name: "Visual Basic.NET", textColor:"white", backgroundColor: "purple",  },
+                { name: "mySQL", textColor:"white",backgroundColor: "gray" },
+
+
+              ]}
             />
           </div>
 
@@ -129,6 +159,13 @@ const Projects = () => {
                   title: "Video 1",
                   url: "https://www.youtube.com/embed/HsDnTL4O7tQ",
                 },
+              ]}
+              languages={[
+                { name: "Visual Basic.NET", textColor:"white", backgroundColor: "purple",  },
+                { name: "mySQL", textColor:"white",backgroundColor: "gray" },
+                { name: "Informix", textColor:"white",backgroundColor: "gray" },
+
+
               ]}
             />
           </div>
@@ -153,6 +190,12 @@ const Projects = () => {
                   url: "https://www.youtube.com/embed/XZuIXC1x4f8",
                 },
               ]}
+              languages={[
+                { name: "Visual Basic.NET", textColor:"white", backgroundColor: "purple",  },
+                { name: "mySQL", textColor:"white",backgroundColor: "gray" },
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
+
+              ]}
             />
           </div>
 
@@ -175,6 +218,9 @@ const Projects = () => {
                   url: "https://www.youtube.com/embed/AKv6Dq2DutA",
                 },
               ]}
+              languages={[
+                { name: "Shell Script", textColor:"white", backgroundColor: "green",  },
+              ]}
             />
           </div>
 
@@ -191,10 +237,13 @@ const Projects = () => {
                   url: "https://github.com/BrahianPuschiasis/BusSystem",
                 },
               ]}
+              languages={[
+                { name: "C/C++", textColor:"black", backgroundColor: "pink",  },
+              ]}
             />
           </div>
 
-          {/* Notas app para ensolvers */}
+          {/* Notas app*/}
           <div className="mb-8">
             {" "}
             {/* Add margin bottom to create separation */}
@@ -212,6 +261,16 @@ const Projects = () => {
                   title: "Note App",
                   url: "https://www.youtube.com/embed/3qvPVZU_uDE",
                 },
+              ]}
+              languages={[
+                { name: "Java", textColor:"black", backgroundColor: "orange",  },
+                { name: "Java Script", textColor:"black",backgroundColor: "orange" },
+                { name: "H2", textColor:"black", backgroundColor: "white",  },
+                { name: "Spring Boot", textColor:"black", backgroundColor: "green",  },
+                { name: "React", textColor:"black",backgroundColor: "cyan" },
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
+                { name: "CSS", textColor:"white",backgroundColor: "purple" },
+
               ]}
             />
           </div>
@@ -234,6 +293,13 @@ const Projects = () => {
                   url: "https://brahianpuschiasis.github.io/FinalFrontIII/",
                 },
               ]}
+              languages={[
+                { name: "Java Script", textColor:"black",backgroundColor: "orange" },
+                { name: "React", textColor:"black",backgroundColor: "cyan" },
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
+                { name: "CSS", textColor:"white",backgroundColor: "purple" },
+
+              ]}
             />
           </div>
 
@@ -253,6 +319,10 @@ const Projects = () => {
                   name: t("deployedPage"),
                   url: "https://brahianpuschiasis.github.io/FinalFront/",
                 },
+              ]}
+              languages={[
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
+                { name: "CSS", textColor:"white",backgroundColor: "purple" },
               ]}
             />
           </div>
