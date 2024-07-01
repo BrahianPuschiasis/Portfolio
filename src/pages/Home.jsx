@@ -16,6 +16,8 @@ const Home = () => {
     <div className="font-sans bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white">
       <section className="container mx-auto my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          {/* Personal Information */}
           <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
             <h2 className="text-xl font-semibold mb-2">{t("personalInfo")}</h2>
             <p>
@@ -76,99 +78,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Estudios */}
-      <section className="container mx-auto my-8">
-        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">{t("education")}</h2>
-          <div className="mb-4">
-            <p className="text-lg font-semibold">{t("backendSpecialist")}</p>
-            <p className="text-sm">Universidad Tecnológica del Uruguay</p>
-            <p className="text-sm">2024 - {t("onCourse")}</p>
-          </div>
 
-          <div className="mb-4">
-            <div>
-              <p className="text-lg font-semibold">{t("computerEngineer")}</p>
-              <p className="text-sm">Facultad de Ingeniería (UDELAR)</p>
-              <p className="text-sm">2020 - {t("onCourse")}</p>
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <p className="text-lg font-semibold">
-              {t("professionalDeveloper")}
-            </p>
-            <p className="text-sm">Universidad Tecnológica del Uruguay</p>
-            <p className="text-sm">2022 - 2023</p>
-          </div>
-
-          <div className="mb-4">
-            <p className="text-lg font-semibold">{t("highSchool")}</p>
-            <p className="text-sm">
-              Instituto Tecnológico Superior "Arias Balparda"
-            </p>
-            <p className="text-sm">2011 - 2014</p>
-          </div>
-
-          {/* Agrega más información educativa según sea necesario */}
-        </div>
-      </section>
-      {/* Idiomas */}
-      <section className="container mx-auto my-8">
-        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">{t("languages")}</h2>
-          <ul className="list-disc pl-6">
-            <li>
-              {t("spanish")}: {t("native")}
-            </li>
-            <li>
-              {t("italian")}: {t("basic")} ({t("spokenAndWritten")},{" "}
-              {t("needsReview")})
-            </li>
-            <li>
-              {t("portuguese")}: {t("intermediate")} ({t("spokenAndWritten")})
-            </li>
-            <li>
-              {t("english")}: {t("advanced")} ({t("spokenWrittenUnderstanding")}
-              , {t("practiceRequiredForFormality")})
-            </li>
-          </ul>
-          {/* Agrega más experiencias y proyectos según sea necesario */}
-        </div>
-      </section>
-
-      {/* Certificados */}
-      <section className="container mx-auto my-8">
-        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
-          <h2 className="text-xl font-semibold mb-2">{t("certifications")}</h2>
-          <ul className="list-disc pl-6 space-y-4">
-            <li className="mb-4">
-              {t("certificationName")}: {t("italianBasicDiploma")}
-              <br />
-              {t("fechaObtencion")}: 2011
-            </li>
-            <li className="mb-4">
-              {t("certificationName")}: {t("portugueseBasicDiploma")}
-              <br />
-              {t("fechaObtencion")}: 2011
-            </li>
-            <li className="mb-4">
-              {t("certificationName")}: {t("highSchoolDiploma")}
-              <br />
-              {t("fechaObtencion")}: 2014
-            </li>
-            <li className="mb-4">
-              {t("certificationName")}: {t("professionalDeveloper")}
-              <br />
-              {t("fechaObtencion")}: 2023
-            </li>
-            {/* Agrega más certificaciones según sea necesario */}
-          </ul>
-        </div>
-      </section>
-
-      {/* Habilidades */}
-      <section className="container mx-auto my-8">
+          {/* Habilidades */}
+          <section className="container mx-auto my-8">
         <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
           <h2 className="text-xl font-semibold mb-2">{t("skills")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -237,6 +149,8 @@ const Home = () => {
                 <li>{t("agileMethodologies")}</li>
                 <li>{t("versionControl")}</li>
                 <li>{t("unitTesting")}</li>
+                <li>{t("automaticTesting")}</li>
+
                 {/* Agrega más habilidades técnicas según sea necesario */}
               </ul>
             </div>
@@ -251,6 +165,100 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+      {/* Estudios */}
+      <section className="container mx-auto my-8">
+        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
+          <h2 className="text-xl font-semibold mb-2">{t("education")}</h2>
+          <div className="mb-4">
+            <p className="text-lg font-semibold">{t("backendSpecialist")}</p>
+            <p className="text-sm">Universidad Tecnológica del Uruguay</p>
+            <p className="text-sm">2024 - {t("onCourse")}</p>
+          </div>
+
+          <div className="mb-4">
+            <div>
+              <p className="text-lg font-semibold">{t("computerEngineer")}</p>
+              <p className="text-sm">Facultad de Ingeniería (UDELAR)</p>
+              <p className="text-sm">2020 - {t("onCourse")}</p>
+            </div>
+          </div>
+
+          <div className="mb-4">
+            <p className="text-lg font-semibold">
+              {t("professionalDeveloper")}
+            </p>
+            <p className="text-sm">Universidad Tecnológica del Uruguay</p>
+            <p className="text-sm">2022 - 2023</p>
+          </div>
+
+          <div className="mb-4">
+            <p className="text-lg font-semibold">{t("highSchool")}</p>
+            <p className="text-sm">
+              Instituto Tecnológico Superior "Arias Balparda"
+            </p>
+            <p className="text-sm">2011 - 2014</p>
+          </div>
+
+          {/* Agrega más información educativa según sea necesario */}
+        </div>
+      </section>
+      {/* Idiomas */}
+      <section className="container mx-auto my-8">
+        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
+          <h2 className="text-xl font-semibold mb-2">{t("languages")}</h2>
+          <ul className="list-disc pl-6">
+            <li>
+              {t("spanish")}: {t("native")}
+            </li>
+            <li>
+              {t("italian")}: {t("basic")} ({t("spokenAndWritten")},{" "}
+              {t("needsReview")})
+            </li>
+            <li>
+              {t("portuguese")}: {t("intermediate")} ({t("spokenAndWritten")})
+            </li>
+            <li>
+              {t("english")}: {t("advanced")} ({t("spokenWrittenUnderstanding")}
+              , {t("practiceRequiredForFormality")})
+            </li>
+          </ul>
+          {/* Agrega más experiencias y proyectos según sea necesario */}
+        </div>
+      </section>
+
+      {/* Certificados */}
+      <section className="container mx-auto my-8">
+        <div className="bg-white dark:bg-slate-900 p-4 shadow-md rounded-md">
+          <h2 className="text-xl font-semibold mb-2">{t("certifications")}</h2>
+          <ul className="list-disc pl-6 space-y-4">
+            <li className="mb-4">
+              <li className="mb-4">
+                {t("certificationName")}: {t("professionalDeveloper")}
+                <br />
+                {t("fechaObtencion")}: 2023
+              </li>
+              <li className="mb-4">
+                {t("certificationName")}: {t("highSchoolDiploma")}
+                <br />
+                {t("fechaObtencion")}: 2014
+              </li>
+              <li className="mb-4">
+                {t("certificationName")}: {t("italianBasicDiploma")}
+                <br />
+                {t("fechaObtencion")}: 2011
+              </li>
+              {t("certificationName")}: {t("portugueseBasicDiploma")}
+              <br />
+              {t("fechaObtencion")}: 2011
+            </li>
+            {/* Agrega más certificaciones según sea necesario */}
+          </ul>
+        </div>
+      </section>
+
+
     </div>
   );
 };

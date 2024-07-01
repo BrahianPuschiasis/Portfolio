@@ -115,8 +115,8 @@ const resources = {
     busDesc:"Project done for Programming II at ITS. It consists of a program made in Turbo C/C++, which allows CRUD operations for a bus system to register: buses, routes, trips, tickets, among other data written in the readme.md of the repository. Everything is done in binary files by the same program.",
 
     navHome:"Home",
-    navProject:"Projects"
-    
+    navProject:"Projects",
+    automaticTesting:"Automated test with Selenium"
 
 
     },
@@ -245,7 +245,9 @@ const resources = {
   busDesc:"Proyecto hecho para Programación II en el ITS. Consiste en un programa hecho en Turbo C/C++, el cual permite CRUD de un sistema de buses para registrar: ómnibus, recorridos, viajes, pasajes, entre otros datos escritos en el readme.md del repositorio. Todo está hecho en archivos binarios por el mismo programa.",
 
      navHome:"Inicio",
-    navProject:"Proyectos"
+    navProject:"Proyectos",
+    automaticTesting:"Pruebas automatizadas con Selenium"
+
 
     },
   },
