@@ -1,17 +1,36 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useLanguage } from "../context/LanguajeContext.jsx";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-// import { useTheme } from '../context/ThemeContext.jsx';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from '../context/ThemeContext.jsx';
 
 const Navbar = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
   const { i18n } = useTranslation();
   const { toggleLanguage, language } = useLanguage();
-  // const { toggleDarkMode, isDarkMode } = useTheme();
   const { t } = useTranslation();
+
+  const handleToggleClick = () => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+
+// Whenever the user explicitly chooses light mode
+localStorage.theme = 'light'
+
+// Whenever the user explicitly chooses dark mode
+localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses to respect the OS preference
+localStorage.removeItem('theme')
+    toggleDarkMode();
+  };
 
   const toggleLanguageHandler = () => {
     const newLanguage = language === "en" ? "es" : "en";
@@ -48,18 +67,16 @@ const Navbar = () => {
             {language === "en" ? "ES" : "EN"}
           </button>
         </div>
-        {/* <div className="ml-4">
-          <button
-            onClick={toggleDarkMode}
-            className="text-white hover:text-blue-400 focus:outline-none"
-          >
+        <div className="ml-4">
+          <button onClick={handleToggleClick} className="text-white hover:text-blue-400 focus:outline-none">
             {isDarkMode ? (
               <FontAwesomeIcon icon={faSun} className="text-xl" />
             ) : (
               <FontAwesomeIcon icon={faMoon} className="text-xl" />
             )}
           </button>
-        </div> */}
+          
+        </div>
       </div>
     </nav>
   );

@@ -6,26 +6,30 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Recupera la preferencia almacenada en localStorage al cargar la página
     const storedTheme = localStorage.getItem('theme');
-    return storedTheme === 'dark';
+    return storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
   });
 
+  const applyTheme = (isDark) => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
+
   const toggleDarkMode = () => {
-    // Cambia el estado de isDarkMode y actualiza la clase en el documento
     setIsDarkMode((prevMode) => {
       const newMode = !prevMode;
       localStorage.setItem('theme', newMode ? 'dark' : 'light');
-      document.documentElement.classList.toggle('dark', newMode);
+      applyTheme(newMode);
       return newMode;
     });
   };
 
-  // Al cargar la página, aplica la preferencia de tema almacenada en localStorage
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    document.documentElement.classList.toggle('dark', storedTheme === 'dark');
-  }, []);
+    applyTheme(isDarkMode);
+  }, [isDarkMode]);
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
@@ -34,7 +38,6 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {

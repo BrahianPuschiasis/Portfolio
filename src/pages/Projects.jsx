@@ -9,12 +9,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import { useTheme } from '../context/ThemeContext';
 
 const Projects = () => {
   const { language } = useLanguage();
   const { t } = useTranslation();
-  // const { isDarkMode, toggleDarkMode } = useTheme();
 
   useEffect(() => {}, [language]);
 

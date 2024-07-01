@@ -1125,6 +1125,9 @@ video {
   }
 }
 
+
+
+
 @media (prefers-color-scheme: dark) {
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
@@ -1146,11 +1149,25 @@ video {
   .slick-prev:before, .slick-next:before {
     font-size: 25px !important; 
     -webkit-text-fill-color: white;
-    
   }
-
-
-  
-  
 }
 
+/* Reglas adicionales para manejar el tema oscuro manualmente */
+.dark .bg-gray-800 {
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+.dark .bg-gray-900 {
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.dark .bg-slate-900 {
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+.dark .text-white {
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .slick-prev:before, 
+.dark .slick-next:before {
+  font-size: 25px !important;
+  -webkit-text-fill-color: white;
+}

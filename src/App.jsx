@@ -1,19 +1,20 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react'
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
-import './styles/tailwid.css'
+import './styles/output.css';
+import { ThemeProvider } from './context/ThemeContext.jsx';
 
 function App() {
   return (
-    <Routes>
-    <Route path='/' element={<Home />} />
-    {/* <Route path='/curriculum' element={<Home />} /> */}
-    <Route path='/projects' element={<Projects />} />
-
-  </Routes>
-  )
+    <ThemeProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
