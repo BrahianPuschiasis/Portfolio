@@ -103,7 +103,7 @@ const Navbar = () => {
             className="flex items-center justify-start w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-400"
           >
             <img
-              src="src/images/espana.png"
+              src="espana.png"
               alt="ES"
               className="w-6 h-6 mr-2"
             />
@@ -113,14 +113,14 @@ const Navbar = () => {
             onClick={() => changeLanguage("en")}
             className="flex items-center justify-start w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-400"
           >
-            <img src="src/images/us.png" alt="EN" className="w-6 h-6 mr-2" />
+            <img src="us.png" alt="EN" className="w-6 h-6 mr-2" />
             EN
           </button>
           <button
             onClick={() => changeLanguage("pt")}
             className="flex items-center justify-start w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-400"
           >
-            <img src="src/images/br.png" alt="PT" className="w-6 h-6 mr-2" />
+            <img src="br.png" alt="PT" className="w-6 h-6 mr-2" />
             PT
           </button>
         </div>
