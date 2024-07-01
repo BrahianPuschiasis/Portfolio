@@ -16,6 +16,7 @@ const Navbar = () => {
   const { toggleLanguage, language } = useLanguage();
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(language); // Estado para almacenar el idioma seleccionado
 
   const handleToggleClick = () => {
     if (
@@ -41,6 +42,7 @@ const Navbar = () => {
   const changeLanguage = (newLanguage) => {
     i18n.changeLanguage(newLanguage);
     toggleLanguage(newLanguage);
+    setSelectedLanguage(newLanguage); // Actualiza el estado del idioma seleccionado
     closeLanguageModal();
   };
 
@@ -70,7 +72,8 @@ const Navbar = () => {
             onClick={openLanguageModal}
             className="text-white hover:text-blue-400 focus:outline-none"
           >
-            {language.toUpperCase()}
+            {selectedLanguage.toUpperCase()}{" "}
+            {/* Usa selectedLanguage en lugar de language */}
           </button>
         </div>
         <div className="ml-4">
