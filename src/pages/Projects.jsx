@@ -265,7 +265,7 @@ const Projects = () => {
               languages={[
                 { name: "Java", textColor:"black", backgroundColor: "orange",  },
                 { name: "Java Script", textColor:"black",backgroundColor: "orange" },
-                { name: "H2", textColor:"black", backgroundColor: "white",  },
+                { name: "H2", textColor:"white", backgroundColor: "gray",  },
                 { name: "Spring Boot", textColor:"black", backgroundColor: "green",  },
                 { name: "React", textColor:"black",backgroundColor: "cyan" },
                 { name: "HTML", textColor:"white",backgroundColor: "purple" },
