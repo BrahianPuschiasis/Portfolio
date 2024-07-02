@@ -164,7 +164,7 @@ const Projects = () => {
                 { name: "Visual Basic.NET", textColor:"white", backgroundColor: "purple",  },
                 { name: "mySQL", textColor:"white",backgroundColor: "gray" },
                 { name: "Informix", textColor:"white",backgroundColor: "gray" },
-
+                { name: "HTML", textColor:"white",backgroundColor: "purple" },
 
               ]}
             />
