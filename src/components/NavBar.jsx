@@ -46,7 +46,13 @@ const Navbar = () => {
     closeLanguageModal();
   };
 
-  useEffect(() => {}, [language]);
+  useEffect(() => {
+    const imagePaths = ["espana.png", "us.png", "br.png"];
+    imagePaths.forEach((path) => {
+      const img = new Image();
+      img.src = path;
+    });
+  }, []);
 
   return (
     <nav className="bg-blue-500 dark:bg-slate-900 p-2">
