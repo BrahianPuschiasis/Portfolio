@@ -12,7 +12,9 @@ const Contact = () => {
   const { language } = useLanguage();
   const [buttonText, setButtonText] = useState(t("Enviar"));
 
-  useEffect(() => {}, [language]);
+  useEffect(() => {
+    setButtonText(t("Enviar"));
+  }, [language, t]);
 
   const sendEmail = (e) => {
     e.preventDefault();
