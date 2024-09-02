@@ -13,6 +13,7 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState(t("Enviar"));
 
   useEffect(() => {
+    // Actualiza el texto del botón cuando cambie el idioma
     setButtonText(t("Enviar"));
   }, [language, t]);
 
@@ -21,15 +22,21 @@ const Contact = () => {
 
     const userEmail = form.current.user_email.value;
     const userMessage = form.current.message.value;
-    const finalMessage = `${userMessage}\n\n${userEmail}`;
-    form.current.message.value = finalMessage;
+    const finalMessage = `${userMessage}\n\n${t("contactEmail")}: ${userEmail}`;
+
+    const templateParams = {
+      from_name: "Brahian",
+      user_email: userEmail,
+      message: finalMessage,
+    };
+
     setButtonText(t("Enviando"));
 
     emailjs
-      .sendForm(
+      .send(
         "service_5iw076d", // <--- serviceID
         "template_6co5hib", // <--- templateID
-        form.current,
+        templateParams, // <--- Datos a enviar
         "rr0rEFiEJh0chgDNm" // <--- publicKey
       )
       .then(

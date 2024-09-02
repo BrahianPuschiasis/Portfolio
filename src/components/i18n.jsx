@@ -132,6 +132,9 @@ const resources = {
       Enviando: "Sending...",
       MensajeSuceful: "Message sent successfully",
       MensajeError: "Error sending the message",
+      contactEmail:"Contact Email",
+      Enviado:"Sent",
+
     },
   },
 
@@ -265,6 +268,9 @@ const resources = {
       Enviando: "Enviando...",
       MensajeSuceful: "Mensaje enviado correctamente",
       MensajeError: "Error al enviar el mensaje",
+      contactEmail:"Email de Contacto",
+      Enviado:"Enviado",
+
     },
   },
 
@@ -400,6 +406,10 @@ const resources = {
       Enviando: "Enviando...",
       MensajeSuceful: "Mensagem enviada com sucesso",
       MensajeError: "Erro ao enviar a mensagem",
+      contactEmail:"Contacto do Email",
+      Enviado:"Enviado",
+
+
     },
   },
 };
