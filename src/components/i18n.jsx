@@ -123,6 +123,15 @@ const resources = {
       navHome: "Home",
       navProject: "Projects",
       automaticTesting: "Automated test with Selenium",
+      navContact: "Contact",
+
+      IngresarNombre: "Name",
+      IngresarEmail: "Email",
+      IngresarMensaje: "Message",
+      Enviar: "Send",
+      Enviando: "Sending...",
+      MensajeSuceful: "Message sent successfully",
+      MensajeError: "Error sending the message",
     },
   },
 
@@ -247,6 +256,15 @@ const resources = {
       navHome: "Inicio",
       navProject: "Proyectos",
       automaticTesting: "Pruebas automatizadas con Selenium",
+      navContact: "Contacto",
+
+      IngresarNombre: "Nombre",
+      IngresarEmail: "Email",
+      IngresarMensaje: "Mensaje",
+      Enviar: "Enviar",
+      Enviando: "Enviando...",
+      MensajeSuceful: "Mensaje enviado correctamente",
+      MensajeError: "Error al enviar el mensaje",
     },
   },
 
@@ -373,8 +391,15 @@ const resources = {
       educationalSystem: "Sistema Educacional UTU",
       educationalDesc:
         "Projeto final de ITS, terceiro ano. É um grande projeto, bem documentado no repositório, com seu respectivo orçamento, tabelas de banco de dados com ERD e normalizações, funções de rede/sistema operacional a serem usadas, cronograma do projeto, nome da empresa, entre outros tópicos. Consiste em uma aplicação que gerencia disciplinas, institutos, grupos, cursos, alunos e professores de todas as instituições UTU no Uruguai. Permite atribuir faltas, notas, médias, datas de prova e prova parcial. Gera um relatório tanto para provas parciais quanto para finais, dividido por seus respectivos institutos, grupos e professores. Permite o registro de pessoas dentro da instituição com seu papel correspondente, que concede ou nega acesso a certas funções da aplicação. Usando mySQL e vb.net.",
+      navContact: "Contato",
 
-
+      IngresarNombre: "Nome",
+      IngresarEmail: "Email",
+      IngresarMensaje: "Mensagem",
+      Enviar: "Enviar",
+      Enviando: "Enviando...",
+      MensajeSuceful: "Mensagem enviada com sucesso",
+      MensajeError: "Erro ao enviar a mensagem",
     },
   },
 };

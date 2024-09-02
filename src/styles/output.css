@@ -10,6 +10,38 @@
 
 
 /* Custom CSS */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+}
+
+
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+
+
+
 .icon-container > * + * {
   margin-left: 0.6rem; 
 }
@@ -68,6 +100,7 @@
   border-style: solid;
   /* 2 */
   border-color: #e5e7eb;
+  
   /* 2 */
 }
 
@@ -88,6 +121,7 @@
 
 html,
 :host {
+  
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -105,6 +139,7 @@ html,
   /* 6 */
   -webkit-tap-highlight-color: transparent;
   /* 7 */
+  
 }
 
 /*
@@ -116,6 +151,8 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+
+  
   /* 2 */
 }
 
@@ -419,7 +456,7 @@ Prevent resizing textareas horizontally by default.
 */
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 /*

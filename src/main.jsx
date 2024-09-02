@@ -12,6 +12,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import i18n from './components/i18n.jsx';
 import { LanguageProvider } from './context/LanguajeContext.jsx';
 import { ThemeProvider } from './context/ThemeContext.jsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 library.add(fab);
 
@@ -19,10 +22,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <ThemeProvider>
       <LanguageProvider i18n={i18n}>
-        <Header />
-        <Navbar />
-        <App />
-        <Footer />
+        <div className="flex flex-col min-h-screen bg-root">
+        <ToastContainer />
+          <Header />
+          <Navbar />
+          <main className="flex-grow">
+            <App />
+          </main>
+          <Footer />
+        </div>
       </LanguageProvider>
     </ThemeProvider>
   </BrowserRouter>

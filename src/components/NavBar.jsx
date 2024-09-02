@@ -55,6 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    
     <nav className="bg-blue-500 dark:bg-slate-900 p-2">
       <div className="container mx-auto flex items-center justify-center">
         <div className="text-white">
@@ -71,6 +72,14 @@ const Navbar = () => {
             className="text-xl font-semibold hover:text-blue-400 hover:shadow-md transition duration-300 ease-in-out"
           >
             {t("navProject")}
+          </Link>
+        </div>
+        <div className="text-white ml-4">
+          <Link
+            to="/contact"
+            className="text-xl font-semibold hover:text-blue-400 hover:shadow-md transition duration-300 ease-in-out"
+          >
+            {t("navContact")}
           </Link>
         </div>
         <div className="ml-4">
@@ -103,7 +112,7 @@ const Navbar = () => {
         className="Modal"
         overlayClassName="Overlay"
       >
-        <div className="flex flex-col space-y-2 mt-4 icon-container">
+        <div className="flex space-y-2 mt-4 icon-container">
           <button
             onClick={() => changeLanguage("es")}
             className="flex items-center justify-start w-full px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-400"
