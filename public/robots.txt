@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://brahian-puschiasis.vercel.app/sitemap.xml
